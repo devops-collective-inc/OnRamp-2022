@@ -45,11 +45,11 @@ Your agenda will consist of live presentations, pre-recorded content, open discu
 | 10:30-11:00 | *Break* |
 | 11:00-12:00 | __*PSSummit General Session__[^1]* |
 | 12:00-12:45 | *Lunch* |
-| 1:00-1:45 | __*PSSummit General Session__[^1]* |
-| 2:00-2:15 | __OnRamp Welcome__ (*Jeff Hicks*) |
+| 1:00-1:15 |  **OnRamp Welcome** (*Jeff Hicks*) |
+| 1:15-2:15 | **OnRamp Introductions** (*Jeff Hicks*) |
 | 2:15-2:30 | *Break* |
-| 2:45-3:15 | __OnRamp Introductions__ (*Jeff Hicks*) |
-| 3:15-4:00 | __Automation and DevOps: An Intro to Concepts, Tools, and Technologies__ (*Missy Januszko*) |
+| 2:30-3:15 |  **Automation and DevOps: An Intro to Concepts, Tools, and Technologies** (*Missy Januszko*) |
+| 3:15-4:00 | Open Discussion |
 | 4:00-4:45 | __Introduction to Azure and Cloud Technologies__ (*Peter de Tender*) |
 | 4:45-5:00 | __Day 1 Wrap-Up__ (*Jeff Hicks*) |
 | 5:00 | *Community Happy Hour* |
