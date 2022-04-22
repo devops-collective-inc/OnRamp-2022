@@ -1,0 +1,2954 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Service.ServiceController#StartupType</T>
+      <T>System.Service.ServiceController#BinaryPathName</T>
+      <T>System.Service.ServiceController#DelayedAutoStart</T>
+      <T>System.Service.ServiceController#Description</T>
+      <T>System.Service.ServiceController#UserName</T>
+      <T>System.ServiceProcess.ServiceController</T>
+      <T>System.ComponentModel.Component</T>
+      <T>System.MarshalByRefObject</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>BcastDVRUserService_161916</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">false</B>
+      <S N="DisplayName">GameDVR and Broadcast User Service_161916</S>
+      <Obj N="DependentServices" RefId="1">
+        <TN RefId="1">
+          <T>System.ServiceProcess.ServiceController[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST />
+      </Obj>
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BcastDVRUserService_161916</S>
+      <Obj N="ServicesDependedOn" RefId="2">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <Obj N="StartType" RefId="3">
+        <TN RefId="2">
+          <T>System.ServiceProcess.ServiceStartMode</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="4">
+        <TN RefId="3">
+          <T>Microsoft.Win32.SafeHandles.SafeServiceHandle</T>
+          <T>System.Runtime.InteropServices.SafeHandle</T>
+          <T>System.Runtime.ConstrainedExecution.CriticalFinalizerObject</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="5">
+        <TN RefId="4">
+          <T>System.ServiceProcess.ServiceControllerStatus</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Stopped</ToString>
+        <I32>1</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="6">
+        <TN RefId="5">
+          <T>System.ServiceProcess.ServiceType</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>224</ToString>
+        <I32>224</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName"></S>
+      <S N="Description">This user service is used for Game Recordings and Live Broadcasts</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k BcastDVRUserService</S>
+      <Obj N="StartupType" RefId="7">
+        <TN RefId="6">
+          <T>Microsoft.PowerShell.Commands.ServiceStartupType</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BcastDVRUserService_161916</S>
+      <Ref N="RequiredServices" RefId="2" />
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <ToString>BDESVC</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">false</B>
+      <S N="DisplayName">BitLocker Drive Encryption Service</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BDESVC</S>
+      <Obj N="ServicesDependedOn" RefId="9">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <Obj N="StartType" RefId="10">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="Status" RefId="11">
+        <TNRef RefId="4" />
+        <ToString>Stopped</ToString>
+        <I32>1</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="12">
+        <TNRef RefId="5" />
+        <ToString>Win32OwnProcess, Win32ShareProcess</ToString>
+        <I32>48</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">localSystem</S>
+      <S N="Description">BDESVC hosts the BitLocker Drive Encryption service. BitLocker Drive Encryption provides secure startup for the operating system, as well as full volume encryption for OS, fixed or removable volumes. This service allows BitLocker to prompt users for various actions related to their volumes when mounted, and unlocks volumes automatically without user interaction. Additionally, it stores recovery information to Active Directory, if available, and, if necessary, ensures the most recent recovery certificates are used.  Stopping or disabling the service would prevent users from leveraging this functionality.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+      <Obj N="StartupType" RefId="13">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BDESVC</S>
+      <Ref N="RequiredServices" RefId="9" />
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <ToString>BFE</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">Base Filtering Engine</S>
+      <Obj N="DependentServices" RefId="15">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="16">
+            <TN RefId="7">
+              <T>System.ServiceProcess.ServiceController</T>
+              <T>System.ComponentModel.Component</T>
+              <T>System.MarshalByRefObject</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>ekrnEpfw</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">true</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">ESET Firewall Helper</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">ekrnEpfw</S>
+              <Obj N="ServicesDependedOn" RefId="17">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">ekrnEpfw</S>
+              <Ref N="RequiredServices" RefId="17" />
+            </MS>
+          </Obj>
+          <Obj RefId="18">
+            <TNRef RefId="7" />
+            <ToString>XboxNetApiSvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Xbox Live Networking Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">XboxNetApiSvc</S>
+              <Obj N="ServicesDependedOn" RefId="19">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                  <S>mpssvc</S>
+                  <S>IKEEXT</S>
+                  <S>KeyIso</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">XboxNetApiSvc</S>
+              <Ref N="RequiredServices" RefId="19" />
+            </MS>
+          </Obj>
+          <Obj RefId="20">
+            <TNRef RefId="7" />
+            <ToString>webthreatdefsvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">true</B>
+              <B N="CanShutdown">true</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Web Threat Defense Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">webthreatdefsvc</S>
+              <Obj N="ServicesDependedOn" RefId="21">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcSs</S>
+                  <S>wtd</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">webthreatdefsvc</S>
+              <Ref N="RequiredServices" RefId="21" />
+            </MS>
+          </Obj>
+          <Obj RefId="22">
+            <TNRef RefId="7" />
+            <ToString>wtd</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">wtd</S>
+              <Obj N="DependentServices" RefId="23">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefsvc</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">wtd</S>
+              <Obj N="ServicesDependedOn" RefId="24">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>tcpip</S>
+                  <S>bfe</S>
+                  <S>FltMgr</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">KernelDriver</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">wtd</S>
+              <Ref N="RequiredServices" RefId="24" />
+            </MS>
+          </Obj>
+          <Obj RefId="25">
+            <TNRef RefId="7" />
+            <ToString>WdNisSvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Microsoft Defender Antivirus Network Inspection Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">WdNisSvc</S>
+              <Obj N="ServicesDependedOn" RefId="26">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>WdNisDrv</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32OwnProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">WdNisSvc</S>
+              <Ref N="RequiredServices" RefId="26" />
+            </MS>
+          </Obj>
+          <Obj RefId="27">
+            <TNRef RefId="7" />
+            <ToString>WdNisDrv</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Microsoft Defender Antivirus Network Inspection System Driver</S>
+              <Obj N="DependentServices" RefId="28">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>WdNisSvc</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">WdNisDrv</S>
+              <Obj N="ServicesDependedOn" RefId="29">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">KernelDriver</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">WdNisDrv</S>
+              <Ref N="RequiredServices" RefId="29" />
+            </MS>
+          </Obj>
+          <Obj RefId="30">
+            <TNRef RefId="7" />
+            <ToString>SharedAccess</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Internet Connection Sharing (ICS)</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">SharedAccess</S>
+              <Obj N="ServicesDependedOn" RefId="31">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">SharedAccess</S>
+              <Ref N="RequiredServices" RefId="31" />
+            </MS>
+          </Obj>
+          <Obj RefId="32">
+            <TNRef RefId="7" />
+            <ToString>RemoteAccess</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Routing and Remote Access</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">RemoteAccess</S>
+              <Obj N="ServicesDependedOn" RefId="33">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcSS</S>
+                  <S>Bfe</S>
+                  <S>RasMan</S>
+                  <S>Http</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Disabled</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">RemoteAccess</S>
+              <Ref N="RequiredServices" RefId="33" />
+            </MS>
+          </Obj>
+          <Obj RefId="34">
+            <TNRef RefId="7" />
+            <ToString>PolicyAgent</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">true</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">IPsec Policy Agent</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">PolicyAgent</S>
+              <Obj N="ServicesDependedOn" RefId="35">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>Tcpip</S>
+                  <S>bfe</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">PolicyAgent</S>
+              <Ref N="RequiredServices" RefId="35" />
+            </MS>
+          </Obj>
+          <Obj RefId="36">
+            <TNRef RefId="7" />
+            <ToString>NcaSvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Network Connectivity Assistant</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">NcaSvc</S>
+              <Obj N="ServicesDependedOn" RefId="37">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                  <S>dnscache</S>
+                  <S>NSI</S>
+                  <S>iphlpsvc</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">NcaSvc</S>
+              <Ref N="RequiredServices" RefId="37" />
+            </MS>
+          </Obj>
+          <Obj RefId="38">
+            <TNRef RefId="7" />
+            <ToString>gcs</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Hyper-V Guest Compute Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">gcs</S>
+              <Obj N="ServicesDependedOn" RefId="39">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>condrv</S>
+                  <S>hvsocketcontrol</S>
+                  <S>mpssvc</S>
+                  <S>netsetupsvc</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32OwnProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">gcs</S>
+              <Ref N="RequiredServices" RefId="39" />
+            </MS>
+          </Obj>
+          <Obj RefId="40">
+            <TNRef RefId="7" />
+            <ToString>mpssvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Windows Defender Firewall</S>
+              <Obj N="DependentServices" RefId="41">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">mpssvc</S>
+              <Obj N="ServicesDependedOn" RefId="42">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>mpsdrv</S>
+                  <S>bfe</S>
+                  <S>nsi</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">mpssvc</S>
+              <Ref N="RequiredServices" RefId="42" />
+            </MS>
+          </Obj>
+          <Obj RefId="43">
+            <TNRef RefId="7" />
+            <ToString>IKEEXT</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">true</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">IKE and AuthIP IPsec Keying Modules</S>
+              <Obj N="DependentServices" RefId="44">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>XboxNetApiSvc</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">IKEEXT</S>
+              <Obj N="ServicesDependedOn" RefId="45">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BFE</S>
+                  <S>nsi</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">IKEEXT</S>
+              <Ref N="RequiredServices" RefId="45" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BFE</S>
+      <Obj N="ServicesDependedOn" RefId="46">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="47">
+            <TNRef RefId="7" />
+            <ToString>RpcSs</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Remote Procedure Call (RPC)</S>
+              <Obj N="DependentServices" RefId="48">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">RpcSs</S>
+              <Obj N="ServicesDependedOn" RefId="49">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcEptMapper</S>
+                  <S>DcomLaunch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">RpcSs</S>
+              <Ref N="RequiredServices" RefId="49" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <Obj N="StartType" RefId="50">
+        <TNRef RefId="2" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <Obj N="Status" RefId="51">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="52">
+        <TNRef RefId="5" />
+        <ToString>Win32ShareProcess</ToString>
+        <I32>32</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">NT AUTHORITY\LocalService</S>
+      <S N="Description">The Base Filtering Engine (BFE) is a service that manages firewall and Internet Protocol security (IPsec) policies and implements user mode filtering. Stopping or disabling the BFE service will significantly reduce the security of the system. It will also result in unpredictable behavior in IPsec management and firewall applications.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p</S>
+      <Obj N="StartupType" RefId="53">
+        <TNRef RefId="6" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <S N="Name">BFE</S>
+      <Ref N="RequiredServices" RefId="46" />
+    </MS>
+  </Obj>
+  <Obj RefId="54">
+    <TNRef RefId="0" />
+    <ToString>BITS</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">false</B>
+      <S N="DisplayName">Background Intelligent Transfer Service</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BITS</S>
+      <Obj N="ServicesDependedOn" RefId="55">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="56">
+            <TNRef RefId="7" />
+            <ToString>RpcSs</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Remote Procedure Call (RPC)</S>
+              <Obj N="DependentServices" RefId="57">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">RpcSs</S>
+              <Obj N="ServicesDependedOn" RefId="58">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcEptMapper</S>
+                  <S>DcomLaunch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">RpcSs</S>
+              <Ref N="RequiredServices" RefId="58" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <Obj N="StartType" RefId="59">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="60">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="61">
+        <TNRef RefId="4" />
+        <ToString>Stopped</ToString>
+        <I32>1</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="62">
+        <TNRef RefId="5" />
+        <ToString>Win32ShareProcess</ToString>
+        <I32>32</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">LocalSystem</S>
+      <S N="Description">Transfers files in the background using idle network bandwidth. If the service is disabled, then any applications that depend on BITS, such as Windows Update or MSN Explorer, will be unable to automatically download programs and other information.</S>
+      <B N="DelayedAutoStart">true</B>
+      <S N="BinaryPathName">C:\WINDOWS\System32\svchost.exe -k netsvcs -p</S>
+      <Obj N="StartupType" RefId="63">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BITS</S>
+      <Ref N="RequiredServices" RefId="55" />
+    </MS>
+  </Obj>
+  <Obj RefId="64">
+    <TNRef RefId="0" />
+    <ToString>BluetoothUserService_161916</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">Bluetooth User Support Service_161916</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BluetoothUserService_161916</S>
+      <Obj N="ServicesDependedOn" RefId="65">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <Obj N="StartType" RefId="66">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="67">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="68">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="69">
+        <TNRef RefId="5" />
+        <ToString>240</ToString>
+        <I32>240</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName"></S>
+      <S N="Description">The Bluetooth user service supports proper functionality of Bluetooth features relevant to each user session.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k BthAppGroup -p</S>
+      <Obj N="StartupType" RefId="70">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BluetoothUserService_161916</S>
+      <Ref N="RequiredServices" RefId="65" />
+    </MS>
+  </Obj>
+  <Obj RefId="71">
+    <TNRef RefId="0" />
+    <ToString>BoxUpdateSvc</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">true</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">Box Update Service</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BoxUpdateSvc</S>
+      <Obj N="ServicesDependedOn" RefId="72">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <Obj N="StartType" RefId="73">
+        <TNRef RefId="2" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="74">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="75">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="76">
+        <TNRef RefId="5" />
+        <ToString>Win32OwnProcess</ToString>
+        <I32>16</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">LocalSystem</S>
+      <Nil N="Description" />
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">"C:\Program Files\Box\Box\Box.Desktop.UpdateService.exe"</S>
+      <Obj N="StartupType" RefId="77">
+        <TNRef RefId="6" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <S N="Name">BoxUpdateSvc</S>
+      <Ref N="RequiredServices" RefId="72" />
+    </MS>
+  </Obj>
+  <Obj RefId="78">
+    <TNRef RefId="0" />
+    <ToString>BrokerInfrastructure</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">false</B>
+      <S N="DisplayName">Background Tasks Infrastructure Service</S>
+      <Obj N="DependentServices" RefId="79">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="80">
+            <TNRef RefId="7" />
+            <ToString>workfolderssvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Work Folders</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">workfolderssvc</S>
+              <Obj N="ServicesDependedOn" RefId="81">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcSs</S>
+                  <S>wsearch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">workfolderssvc</S>
+              <Ref N="RequiredServices" RefId="81" />
+            </MS>
+          </Obj>
+          <Obj RefId="82">
+            <TNRef RefId="7" />
+            <ToString>WMPNetworkSvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Windows Media Player Network Sharing Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">WMPNetworkSvc</S>
+              <Obj N="ServicesDependedOn" RefId="83">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>http</S>
+                  <S>WSearch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32OwnProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">WMPNetworkSvc</S>
+              <Ref N="RequiredServices" RefId="83" />
+            </MS>
+          </Obj>
+          <Obj RefId="84">
+            <TNRef RefId="7" />
+            <ToString>WSearch</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">true</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Windows Search</S>
+              <Obj N="DependentServices" RefId="85">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">WSearch</S>
+              <Obj N="ServicesDependedOn" RefId="86">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RPCSS</S>
+                  <S>BrokerInfrastructure</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">WSearch</S>
+              <Ref N="RequiredServices" RefId="86" />
+            </MS>
+          </Obj>
+          <Obj RefId="87">
+            <TNRef RefId="7" />
+            <ToString>TokenBroker</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Web Account Manager</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">TokenBroker</S>
+              <Obj N="ServicesDependedOn" RefId="88">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>UserManager</S>
+                  <S>BrokerInfrastructure</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">TokenBroker</S>
+              <Ref N="RequiredServices" RefId="88" />
+            </MS>
+          </Obj>
+          <Obj RefId="89">
+            <TNRef RefId="7" />
+            <ToString>CDPSvc</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Connected Devices Platform Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">CDPSvc</S>
+              <Obj N="ServicesDependedOn" RefId="90">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>ncbservice</S>
+                  <S>RpcSS</S>
+                  <S>Tcpip</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">CDPSvc</S>
+              <Ref N="RequiredServices" RefId="90" />
+            </MS>
+          </Obj>
+          <Obj RefId="91">
+            <TNRef RefId="7" />
+            <ToString>NcbService</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Network Connection Broker</S>
+              <Obj N="DependentServices" RefId="92">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>CDPSvc</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">NcbService</S>
+              <Obj N="ServicesDependedOn" RefId="93">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcSS</S>
+                  <S>tcpip</S>
+                  <S>BrokerInfrastructure</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32OwnProcess, Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">NcbService</S>
+              <Ref N="RequiredServices" RefId="93" />
+            </MS>
+          </Obj>
+          <Obj RefId="94">
+            <TNRef RefId="7" />
+            <ToString>embeddedmode</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Embedded Mode</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">embeddedmode</S>
+              <Obj N="ServicesDependedOn" RefId="95">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>BrokerInfrastructure</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">embeddedmode</S>
+              <Ref N="RequiredServices" RefId="95" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BrokerInfrastructure</S>
+      <Obj N="ServicesDependedOn" RefId="96">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="97">
+            <TNRef RefId="7" />
+            <ToString>RpcEptMapper</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">RPC Endpoint Mapper</S>
+              <Obj N="DependentServices" RefId="98">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                  <S>RpcSs</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">RpcEptMapper</S>
+              <Obj N="ServicesDependedOn" RefId="99">
+                <TNRef RefId="1" />
+                <LST />
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">RpcEptMapper</S>
+              <Ref N="RequiredServices" RefId="99" />
+            </MS>
+          </Obj>
+          <Obj RefId="100">
+            <TNRef RefId="7" />
+            <ToString>DcomLaunch</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">DCOM Server Process Launcher</S>
+              <Obj N="DependentServices" RefId="101">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                  <S>RpcSs</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">DcomLaunch</S>
+              <Obj N="ServicesDependedOn" RefId="102">
+                <TNRef RefId="1" />
+                <LST />
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">DcomLaunch</S>
+              <Ref N="RequiredServices" RefId="102" />
+            </MS>
+          </Obj>
+          <Obj RefId="103">
+            <TNRef RefId="7" />
+            <ToString>RpcSs</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Remote Procedure Call (RPC)</S>
+              <Obj N="DependentServices" RefId="104">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">RpcSs</S>
+              <Obj N="ServicesDependedOn" RefId="105">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcEptMapper</S>
+                  <S>DcomLaunch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">RpcSs</S>
+              <Ref N="RequiredServices" RefId="105" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <Obj N="StartType" RefId="106">
+        <TNRef RefId="2" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <Obj N="Status" RefId="107">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="108">
+        <TNRef RefId="5" />
+        <ToString>Win32ShareProcess</ToString>
+        <I32>32</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">LocalSystem</S>
+      <S N="Description">Windows infrastructure service that controls which background tasks can run on the system.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p</S>
+      <Obj N="StartupType" RefId="109">
+        <TNRef RefId="6" />
+        <ToString>Automatic</ToString>
+        <I32>2</I32>
+      </Obj>
+      <S N="Name">BrokerInfrastructure</S>
+      <Ref N="RequiredServices" RefId="96" />
+    </MS>
+  </Obj>
+  <Obj RefId="110">
+    <TNRef RefId="0" />
+    <ToString>BTAGService</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">Bluetooth Audio Gateway Service</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BTAGService</S>
+      <Obj N="ServicesDependedOn" RefId="111">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="112">
+            <TNRef RefId="7" />
+            <ToString>rpcss</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Remote Procedure Call (RPC)</S>
+              <Obj N="DependentServices" RefId="113">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">rpcss</S>
+              <Obj N="ServicesDependedOn" RefId="114">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcEptMapper</S>
+                  <S>DcomLaunch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">rpcss</S>
+              <Ref N="RequiredServices" RefId="114" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <Obj N="StartType" RefId="115">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="116">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="117">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="118">
+        <TNRef RefId="5" />
+        <ToString>Win32OwnProcess, Win32ShareProcess</ToString>
+        <I32>48</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">NT AUTHORITY\LocalService</S>
+      <S N="Description">Service supporting the audio gateway role of the Bluetooth Handsfree Profile.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted</S>
+      <Obj N="StartupType" RefId="119">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BTAGService</S>
+      <Ref N="RequiredServices" RefId="111" />
+    </MS>
+  </Obj>
+  <Obj RefId="120">
+    <TNRef RefId="0" />
+    <ToString>BthAvctpSvc</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">false</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">AVCTP service</S>
+      <Ref N="DependentServices" RefId="1" />
+      <S N="MachineName">.</S>
+      <S N="ServiceName">BthAvctpSvc</S>
+      <Obj N="ServicesDependedOn" RefId="121">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="122">
+            <TNRef RefId="7" />
+            <ToString>rpcss</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Remote Procedure Call (RPC)</S>
+              <Obj N="DependentServices" RefId="123">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>webthreatdefusersvc_161916</S>
+                  <S>PrintWorkflowUserSvc_161916</S>
+                  <S>P9RdrService_161916</S>
+                  <S>DevicesFlowUserSvc_161916</S>
+                  <S>DevicePickerUserSvc_161916</S>
+                  <S>DeviceAssociationBrokerSvc_161916</S>
+                  <S>CredentialEnrollmentManagerUserSvc_161916</S>
+                  <S>ConsentUxUserSvc_161916</S>
+                  <S>CaptureService_161916</S>
+                  <S>BluetoothUserService_161916</S>
+                  <S>BcastDVRUserService_161916</S>
+                  <S>XblGameSave</S>
+                  <S>XblAuthManager</S>
+                  <S>wlpasvc</S>
+                  <S>WwanSvc</S>
+                  <S>wuauserv</S>
+                  <S>workfolderssvc</S>
+                  <S>WMPNetworkSvc</S>
+                  <S>WSearch</S>
+                  <S>wscsvc</S>
+                  <S>WpnService</S>
+                  <S>WPDBusEnum</S>
+                  <S>WManSvc</S>
+                  <S>wlidsvc</S>
+                  <S>WlanSvc</S>
+                  <S>wisvc</S>
+                  <S>WinRM</S>
+                  <S>vmms</S>
+                  <S>SUService</S>
+                  <S>HgClientService</S>
+                  <S>Winmgmt</S>
+                  <S>WinDefend</S>
+                  <S>WiaRpc</S>
+                  <S>WFDSConMgrSvc</S>
+                  <S>WEPHOSTSVC</S>
+                  <S>webthreatdefusersvc</S>
+                  <S>webthreatdefsvc</S>
+                  <S>wcncsvc</S>
+                  <S>icssvc</S>
+                  <S>Wcmsvc</S>
+                  <S>WbioSrvc</S>
+                  <S>WaaSMedicSvc</S>
+                  <S>VSS</S>
+                  <S>CmService</S>
+                  <S>vmcompute</S>
+                  <S>vds</S>
+                  <S>VaultSvc</S>
+                  <S>VacSvc</S>
+                  <S>UsoSvc</S>
+                  <S>TokenBroker</S>
+                  <S>UserManager</S>
+                  <S>TroubleshootingSvc</S>
+                  <S>TrkWks</S>
+                  <S>TextInputManagementService</S>
+                  <S>UmRdpService</S>
+                  <S>TermService</S>
+                  <S>Fax</S>
+                  <S>TapiSrv</S>
+                  <S>NaturalAuthentication</S>
+                  <S>Schedule</S>
+                  <S>SystemEventsBroker</S>
+                  <S>SysMain</S>
+                  <S>swprv</S>
+                  <S>StiSvc</S>
+                  <S>LxssManager</S>
+                  <S>AppXSvc</S>
+                  <S>StateRepository</S>
+                  <S>sppsvc</S>
+                  <S>Spooler</S>
+                  <S>spectrum</S>
+                  <S>SmsRouter</S>
+                  <S>smphost</S>
+                  <S>shpamsvc</S>
+                  <S>ShellHWDetection</S>
+                  <S>SharedRealitySvc</S>
+                  <S>SgrmBroker</S>
+                  <S>SessionEnv</S>
+                  <S>SEMgrSvc</S>
+                  <S>SecurityHealthService</S>
+                  <S>SDRSVC</S>
+                  <S>SCPolicySvc</S>
+                  <S>MSDTC</S>
+                  <S>LanmanServer</S>
+                  <S>KtmRm</S>
+                  <S>SamSs</S>
+                  <S>RmSvc</S>
+                  <S>RemoteRegistry</S>
+                  <S>RemoteAccess</S>
+                  <S>QWAVE</S>
+                  <S>PushToInstall</S>
+                  <S>Appinfo</S>
+                  <S>ProfSvc</S>
+                  <S>PrintWorkflowUserSvc</S>
+                  <S>PrintNotify</S>
+                  <S>pla</S>
+                  <S>PhoneSvc</S>
+                  <S>PerfHost</S>
+                  <S>perceptionsimulation</S>
+                  <S>PcaSvc</S>
+                  <S>P9RdrService</S>
+                  <S>upnphost</S>
+                  <S>SSDPSRV</S>
+                  <S>NcdAutoSetup</S>
+                  <S>AppVClient</S>
+                  <S>netprofm</S>
+                  <S>Netman</S>
+                  <S>NcaSvc</S>
+                  <S>XboxNetApiSvc</S>
+                  <S>gcs</S>
+                  <S>mpssvc</S>
+                  <S>Netlogon</S>
+                  <S>LanmanWorkstation</S>
+                  <S>IpxlatCfgSvc</S>
+                  <S>jhi_service</S>
+                  <S>iphlpsvc</S>
+                  <S>IKEEXT</S>
+                  <S>HNS</S>
+                  <S>RasMan</S>
+                  <S>Dnscache</S>
+                  <S>WinHttpAutoProxySvc</S>
+                  <S>Dhcp</S>
+                  <S>nsi</S>
+                  <S>NgcSvc</S>
+                  <S>NgcCtnrSvc</S>
+                  <S>NetSetupSvc</S>
+                  <S>CDPSvc</S>
+                  <S>NcbService</S>
+                  <S>msiserver</S>
+                  <S>MixedRealityOpenXRSvc</S>
+                  <S>MicrosoftEdgeElevationService</S>
+                  <S>McpManagementService</S>
+                  <S>MapsBroker</S>
+                  <S>MagicianSVC</S>
+                  <S>LSM</S>
+                  <S>lltdsvc</S>
+                  <S>LicenseManager</S>
+                  <S>lfsvc</S>
+                  <S>SQLAgent$SQLEXPRESS</S>
+                  <S>MSSQL$SQLEXPRESS</S>
+                  <S>dot3svc</S>
+                  <S>EapHost</S>
+                  <S>KeyIso</S>
+                  <S>InventorySvc</S>
+                  <S>InstallService</S>
+                  <S>gupdatem</S>
+                  <S>gupdate</S>
+                  <S>gpsvc</S>
+                  <S>GoogleChromeElevationService</S>
+                  <S>FrameServerMonitor</S>
+                  <S>FrameServer</S>
+                  <S>fhsvc</S>
+                  <S>FDResPub</S>
+                  <S>fdPHost</S>
+                  <S>igfxCUIService2.0.0.0</S>
+                  <S>COMSysApp</S>
+                  <S>SENS</S>
+                  <S>EventSystem</S>
+                  <S>EntAppSvc</S>
+                  <S>EFS</S>
+                  <S>edgeupdatem</S>
+                  <S>edgeupdate</S>
+                  <S>DusmSvc</S>
+                  <S>DsmSvc</S>
+                  <S>DoSvc</S>
+                  <S>dmwappushservice</S>
+                  <S>DmEnrollmentSvc</S>
+                  <S>DispBrokerDesktopSvc</S>
+                  <S>DiagTrack</S>
+                  <S>diagsvc</S>
+                  <S>DevicesFlowUserSvc</S>
+                  <S>DevicePickerUserSvc</S>
+                  <S>DeviceAssociationBrokerSvc</S>
+                  <S>defragsvc</S>
+                  <S>dcsvc</S>
+                  <S>dbupdatem</S>
+                  <S>dbupdate</S>
+                  <S>CscService</S>
+                  <S>applockerfltr</S>
+                  <S>AppIDSvc</S>
+                  <S>CryptSvc</S>
+                  <S>CredentialEnrollmentManagerUserSvc</S>
+                  <S>cphs</S>
+                  <S>CoreMessagingRegistrar</S>
+                  <S>ConsentUxUserSvc</S>
+                  <S>ClipSVC</S>
+                  <S>CertPropSvc</S>
+                  <S>CaptureService</S>
+                  <S>BthAvctpSvc</S>
+                  <S>BTAGService</S>
+                  <S>embeddedmode</S>
+                  <S>BrokerInfrastructure</S>
+                  <S>BluetoothUserService</S>
+                  <S>BITS</S>
+                  <S>ekrnEpfw</S>
+                  <S>wtd</S>
+                  <S>WdNisSvc</S>
+                  <S>WdNisDrv</S>
+                  <S>SharedAccess</S>
+                  <S>PolicyAgent</S>
+                  <S>BFE</S>
+                  <S>BcastDVRUserService</S>
+                  <S>AxInstSV</S>
+                  <S>autotimesvc</S>
+                  <S>AarSvc_161916</S>
+                  <S>AarSvc</S>
+                  <S>Audiosrv</S>
+                </LST>
+              </Obj>
+              <S N="MachineName">.</S>
+              <S N="ServiceName">rpcss</S>
+              <Obj N="ServicesDependedOn" RefId="124">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>RpcEptMapper</S>
+                  <S>DcomLaunch</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Automatic</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">Win32ShareProcess</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">rpcss</S>
+              <Ref N="RequiredServices" RefId="124" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <Obj N="StartType" RefId="125">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="126">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="127">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="128">
+        <TNRef RefId="5" />
+        <ToString>Win32OwnProcess, Win32ShareProcess</ToString>
+        <I32>48</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">NT AUTHORITY\LocalService</S>
+      <S N="Description">This is Audio Video Control Transport Protocol service</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+      <Obj N="StartupType" RefId="129">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">BthAvctpSvc</S>
+      <Ref N="RequiredServices" RefId="121" />
+    </MS>
+  </Obj>
+  <Obj RefId="130">
+    <TNRef RefId="0" />
+    <ToString>bthserv</ToString>
+    <Props>
+      <B N="CanPauseAndContinue">false</B>
+      <B N="CanShutdown">true</B>
+      <B N="CanStop">true</B>
+      <S N="DisplayName">Bluetooth Support Service</S>
+      <Obj N="DependentServices" RefId="131">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="132">
+            <TNRef RefId="7" />
+            <ToString>BluetoothUserService_161916</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">true</B>
+              <S N="DisplayName">Bluetooth User Support Service_161916</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">BluetoothUserService_161916</S>
+              <Obj N="ServicesDependedOn" RefId="133">
+                <TNRef RefId="1" />
+                <LST />
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Running</S>
+              <S N="ServiceType">240</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">BluetoothUserService_161916</S>
+              <Ref N="RequiredServices" RefId="133" />
+            </MS>
+          </Obj>
+          <Obj RefId="134">
+            <TNRef RefId="7" />
+            <ToString>BluetoothUserService</ToString>
+            <Props>
+              <B N="CanPauseAndContinue">false</B>
+              <B N="CanShutdown">false</B>
+              <B N="CanStop">false</B>
+              <S N="DisplayName">Bluetooth User Support Service</S>
+              <Ref N="DependentServices" RefId="1" />
+              <S N="MachineName">.</S>
+              <S N="ServiceName">BluetoothUserService</S>
+              <Obj N="ServicesDependedOn" RefId="135">
+                <TNRef RefId="1" />
+                <LST>
+                  <S>bthserv</S>
+                  <S>rpcss</S>
+                </LST>
+              </Obj>
+              <S N="StartType">Manual</S>
+              <S N="ServiceHandle">Microsoft.Win32.SafeHandles.SafeServiceHandle</S>
+              <S N="Status">Stopped</S>
+              <S N="ServiceType">96</S>
+              <Nil N="Site" />
+              <Nil N="Container" />
+            </Props>
+            <MS>
+              <S N="Name">BluetoothUserService</S>
+              <Ref N="RequiredServices" RefId="135" />
+            </MS>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="MachineName">.</S>
+      <S N="ServiceName">bthserv</S>
+      <Obj N="ServicesDependedOn" RefId="136">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <Obj N="StartType" RefId="137">
+        <TNRef RefId="2" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Obj N="ServiceHandle" RefId="138">
+        <TNRef RefId="3" />
+        <ToString>Microsoft.Win32.SafeHandles.SafeServiceHandle</ToString>
+        <Props>
+          <B N="IsInvalid">false</B>
+          <B N="IsClosed">false</B>
+        </Props>
+      </Obj>
+      <Obj N="Status" RefId="139">
+        <TNRef RefId="4" />
+        <ToString>Running</ToString>
+        <I32>4</I32>
+      </Obj>
+      <Obj N="ServiceType" RefId="140">
+        <TNRef RefId="5" />
+        <ToString>Win32OwnProcess, Win32ShareProcess</ToString>
+        <I32>48</I32>
+      </Obj>
+      <Nil N="Site" />
+      <Nil N="Container" />
+    </Props>
+    <MS>
+      <S N="UserName">NT AUTHORITY\LocalService</S>
+      <S N="Description">The Bluetooth service supports discovery and association of remote Bluetooth devices.  Stopping or disabling this service may cause already installed Bluetooth devices to fail to operate properly and prevent new devices from being discovered or associated.</S>
+      <B N="DelayedAutoStart">false</B>
+      <S N="BinaryPathName">C:\WINDOWS\system32\svchost.exe -k LocalService -p</S>
+      <Obj N="StartupType" RefId="141">
+        <TNRef RefId="6" />
+        <ToString>Manual</ToString>
+        <I32>3</I32>
+      </Obj>
+      <S N="Name">bthserv</S>
+      <Ref N="RequiredServices" RefId="136" />
+    </MS>
+  </Obj>
+</Objs>

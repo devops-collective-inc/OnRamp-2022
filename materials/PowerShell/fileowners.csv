@@ -1,0 +1,18 @@
+"Host Name","File Owner","Name","Directory","Last Write Time","Length"
+"PROSPERO","BUILTIN\Administrators","1-PS7Fundamentals",,"2022-04-19 12:52:28Z",
+"PROSPERO","BUILTIN\Administrators","2-Objects-in-the-pipeline",,"2022-04-20 15:20:25Z",
+"PROSPERO","BUILTIN\Administrators","3-PowerShell-Modules",,"2022-04-20 15:28:20Z",
+"PROSPERO","BUILTIN\Administrators","4-Remote-Management",,"2022-04-19 12:49:17Z",
+"PROSPERO","BUILTIN\Administrators","5-PowerShell-Scripting",,"2022-04-19 12:49:53Z",
+"PROSPERO","BUILTIN\Administrators","6-PowerShell-Functions",,"2022-04-19 12:50:15Z",
+"PROSPERO","BUILTIN\Administrators","7-Creating-PowerShell-Modules",,"2022-04-19 12:50:33Z",
+"PROSPERO","BUILTIN\Administrators","fileowners.csv","C:\Training\OnRamp\2022\materials\PowerShell","2022-04-20 17:04:14Z","0"
+"PROSPERO","BUILTIN\Administrators","LabReview.ps1","C:\Training\OnRamp\2022\materials\PowerShell","2022-04-20 15:36:29Z","297"
+"PROSPERO","BUILTIN\Administrators","session.ps1","C:\Training\OnRamp\2022\materials\PowerShell\1-PS7Fundamentals","2022-04-19 16:58:55Z","3658"
+"PROSPERO","BUILTIN\Administrators","extensions.json","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2022-04-20 15:20:25Z","786"
+"PROSPERO","BUILTIN\Administrators","processes.csv","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2022-04-20 14:58:31Z","23522"
+"PROSPERO","BUILTIN\Administrators","processes.html","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2022-04-20 14:52:53Z","36447"
+"PROSPERO","BUILTIN\Administrators","sample.css","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2018-11-21 11:19:02Z","501"
+"PROSPERO","BUILTIN\Administrators","services.xml","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2022-04-20 15:00:11Z","110372"
+"PROSPERO","BUILTIN\Administrators","session.ps1","C:\Training\OnRamp\2022\materials\PowerShell\2-Objects-in-the-pipeline","2022-04-20 15:27:37Z","4958"
+"PROSPERO","BUILTIN\Administrators","demo.ps1","C:\Training\OnRamp\2022\materials\PowerShell\3-PowerShell-Modules","2022-04-20 15:45:31Z","649"

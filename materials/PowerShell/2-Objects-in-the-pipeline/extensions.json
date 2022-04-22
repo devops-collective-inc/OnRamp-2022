@@ -1,0 +1,52 @@
+[
+  {
+    "Count": 5,
+    "Name": ".exe",
+    "TotalSize": 55911088.0
+  },
+  {
+    "Count": 257,
+    "Name": ".txt",
+    "TotalSize": 21129024.0
+  },
+  {
+    "Count": 3168,
+    "Name": ".ps1",
+    "TotalSize": 13028762.0
+  },
+  {
+    "Count": 3,
+    "Name": ".appx",
+    "TotalSize": 12242188.0
+  },
+  {
+    "Count": 3,
+    "Name": ".dll",
+    "TotalSize": 3228672.0
+  },
+  {
+    "Count": 66,
+    "Name": ".csv",
+    "TotalSize": 2610624.0
+  },
+  {
+    "Count": 2,
+    "Name": ".doc",
+    "TotalSize": 1805824.0
+  },
+  {
+    "Count": 4,
+    "Name": ".db",
+    "TotalSize": 1212416.0
+  },
+  {
+    "Count": 1,
+    "Name": ".sdb",
+    "TotalSize": 1056768.0
+  },
+  {
+    "Count": 19,
+    "Name": ".zip",
+    "TotalSize": 1010251.0
+  }
+]
