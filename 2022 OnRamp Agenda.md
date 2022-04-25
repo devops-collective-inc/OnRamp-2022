@@ -87,7 +87,7 @@ Your agenda will consist of live presentations, pre-recorded content, open discu
 | 2:15-2:45 | *Break* |
 | 2:45-3:15   | __Introduction to PowerShell Scripting__ (*Jeff Hicks*) |
 | 3:15-4:00   | __Creating a Simple PowerShell Function__ (*Jeff Hicks*) |
-| 4:00-5:00   | __Creating PowerShell Modules__ (*Jeff Hicks & Paula Kingsley*) |
+| 4:00-5:00   | __*Career Panel__[^1]*  |
 
 ## Thursday 28 April
 
