@@ -25,6 +25,6 @@ Function Get-HotFixReport {
     HotFixID, Description, InstalledBy,
     @{Name = "Installed"; Expression = { $_.InstalledOn -as [datetime] } },
     @{Name = "Online"; Expression = { $_.Caption } },
-    @{Name = "ReportDate" ; Expression = { Get-Date}} |
+    @{Name = "ReportDate" ; Expression = { Get-Date } } |
     Sort-Object -Property Installed
 }

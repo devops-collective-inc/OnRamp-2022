@@ -1,0 +1,6 @@
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/appsettings.Development.json
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/appsettings.json
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/webapp.dll
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/webapp.deps.json
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/webapp.runtimeconfig.json
+/Users/aen/Dropbox/Talks/PowerShell Summit 2022/Containers - You Better Get on Board/demos/webapp/bin/Release/netcoreapp3.1/publish/webapp.pdb

@@ -61,10 +61,11 @@ Function Get-HotFixReport {
     #there are better ways to pass parameter values.
 
     #the PowerShell 7 way using the ternary operator
+    #help about_If
     $hot = $credential ? (Get-HotFix -ComputerName $Computername -Credential $Credential) : (Get-HotFix -ComputerName $Computername)
 
     <#
-        the legacy way using an If statement
+        the legacy way to test the parameter using an If statement
         if ($Credential) {
             Write-Verbose "Using an alternate credential"
             $hot = Get-HotFix -ComputerName $Computername -Credential $Credential

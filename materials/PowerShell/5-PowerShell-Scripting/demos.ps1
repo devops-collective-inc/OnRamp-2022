@@ -62,6 +62,7 @@ psedit .\basic-param.ps1
 .\basic-param.ps1 -Computername srv1 -Credential company\artd
 
 #don't include formatting in the script
+#Let the user format as they need
 .\basic-param.ps1 -Computername srv1,srv2,dom1,dom2 -Credential company\artd |
 Sort-Object Computername,Description,Installed |
 Format-Table -GroupBy Computername -Property Description,HotFixID,Installed*

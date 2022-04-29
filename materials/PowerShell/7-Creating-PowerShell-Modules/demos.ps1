@@ -1,15 +1,5 @@
 #demo PowerShell module fundamentals
 
-#region intro Paula
-
-<#
- What is your day job? Title and activities.
- How did you get into IT?
- What were some of the pivotal points in your career? e.g. certifications, skills learned
- What do you wish you had known about IT when you started your career?
-#>
-
-#endregion
 
 #region What is a module?
 
@@ -17,7 +7,6 @@ help about_modules
 
 # definition
 # why?
-# PK - Why do you write modules?
 
 #endregion
 
@@ -41,8 +30,6 @@ Get-ComputerUptime srv1, srv2, dom1 -Credential company\artd
 #region module layout
 
 #describe folder and naming requirements
-#PK - how do you decide to organize a new module
-#PK - do you have any corporate requirements or personal standards?
 
 #look at module layout
 dir .\MyReporting -Recurse
@@ -63,6 +50,7 @@ psedit .\MyReporting\MyReporting.psd1
 #my finished manifest
 psedit .\baked.psd1
 copy .\baked.psd1 -Destination .\MyReporting\myreporting.psd1
+
 #reset the environment
 Remove-Module myreporting
 Import-Module .\MyReporting -Force
@@ -70,8 +58,6 @@ Get-Module myreporting
 
 #public functions only
 Get-Command -Module MyReporting
-
-# PK: What would you do differently?
 
 #endregion
 
