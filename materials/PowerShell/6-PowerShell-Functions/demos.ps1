@@ -42,7 +42,7 @@ Get-HotFixReport -computername $null
 Get-HotFixReport
 
 Get-Command hfr
-hfr -cn srv1,srv2,dom2,dom1 -runas company\artd -verbose -OutVariable hot | Sort-object Computername |
+hfr -cn srv1,srv2,dom2,dom1 -runas $cred -verbose -OutVariable hot | Sort-object Computername |
 Export-CSV .\hotfixreport.csv
 
 $hot

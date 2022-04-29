@@ -17,7 +17,7 @@ Return "This is a demonstration script file"
 Get-ExecutionPolicy
 help Set-ExecutionPolicy
 #run elevated
-.\bSet-executionPolicy RemoteSigned
+Set-executionPolicy RemoteSigned
 
 #endregion
 

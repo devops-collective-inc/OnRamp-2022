@@ -7,3 +7,4 @@ HotFixID,Description,InstalledBy,
 @{Name="Online";Expression={$_.Caption}} |
 Sort-Object -Property Installed
 
+#end of script

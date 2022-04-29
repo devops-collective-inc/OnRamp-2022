@@ -34,7 +34,7 @@ Enable-PSRemoting
 Get-Service winrm
 Test-WSMan
 
-Test-WSMan -ComputerName srv1
+zTest-WSMan -ComputerName srv1
 
 #also test credentials
 $cred = Get-Credential company\artd
@@ -74,7 +74,6 @@ Exit
 #region one-to-many
 
 Invoke-Command -ScriptBlock { Get-Service bits } -ComputerName SRV1, SRV2 -Credential $cred
-
 
 Invoke-Command -ScriptBlock { $x = 123 ; $x+$x } -ComputerName SRV1 -Credential $cred
 Invoke-Command -ScriptBlock { $x} -ComputerName SRV1 -Credential $cred

@@ -49,12 +49,14 @@ Get-Service bits | ConvertTo-Json
 Get-Service bits | Select-Object Name, Displayname, Can*, StartType, Status, ServiceType | ConvertTo-Json
 Get-Service bits | Select-Object Name, Displayname, Can*, StartType, Status, ServiceType | ConvertTo-Json | Out-File bits.json
 Get-Content bits.json
-Get-Content bits.json | ConvertFrom-Json
+Get-Content bits.json | ConvertFrom-Json #| get-service
 
 Get-Process | Select-Object Name, Id, WorkingSet, StartTime, @{Name = "RunTime"; Expression = { (Get-Date) - $_.startTime } } |
 ConvertTo-Html
 
-Get-Process | Where-Object { $_.name -ne 'idle' } | Select-Object Name, Id, WorkingSet, StartTime, @{Name = "RunTime"; Expression = { (Get-Date) - $_.startTime } } |
+Get-Process | Where-Object { $_.name -ne 'idle' } |
+Select-Object Name, Id, WorkingSet, StartTime,
+@{Name = "RunTime"; Expression = { (Get-Date) - $_.startTime } } |
 Sort-Object -Property Runtime -Descending |
 ConvertTo-Html -Title "Process Report" -PreContent "<H1>$env:computername</H1>" -PostContent "<i>$(Get-Date)</i>" -css .\sample.css |
 Out-File .\processes.html
@@ -67,7 +69,9 @@ Get-Command -Verb Convert*
 
 #region Exporting
 
-Get-Process | Where-Object { $_.name -ne 'idle' } | Select-Object Name, Id, WorkingSet, StartTime, @{Name = "RunTime"; Expression = { (Get-Date) - $_.startTime } } |
+Get-Process | Where-Object { $_.name -ne 'idle' } |
+Select-Object Name, Id, WorkingSet, StartTime,
+@{Name = "RunTime"; Expression = { (Get-Date) - $_.startTime } } |
 Export-Csv .\processes.csv
 
 Import-Csv .\processes.csv
@@ -86,9 +90,12 @@ Get-Command -Verb export
 
 help Group-Object
 
-Get-Service | Group-Object -Property StartType
+Get-Service | Group-Object -Property StartType  |sort count -Descending
 
-Get-Process -IncludeUserName | Where-Object { $null -ne $_.username } | Group-Object username -NoElement | Sort-Object Count -Descending
+Get-Process -IncludeUserName |
+Where-Object { $null -ne $_.username } |
+Group-Object username -NoElement |
+Sort-Object Count -Descending
 
 #endregion
 
@@ -101,7 +108,9 @@ help measure-object
 Get-Process w* | Measure-Object -Property WorkingSet -Sum
 
 #this doesn't have to be a single pipelined expression
-Get-ChildItem c:\scripts -File | Where-Object { $_.extension -match "\.\w+" } | Group-Object -Property extension |
+Get-ChildItem c:\scripts -File |
+Where-Object { $_.extension -match "\.\w+" } |
+Group-Object -Property extension |
 Select-Object Count, Name,
 @{Name = "TotalSize"; Expression = { $_.group | Measure-Object -Property length -Sum | Select-Object -ExpandProperty Sum } } |
 Sort-Object TotalSize -Descending | Select-Object -First 10
@@ -110,11 +119,19 @@ $files = Get-ChildItem c:\scripts -File | Where-Object { $_.extension -match "\.
 $grouped = $files | Group-Object -Property extension
 $measured = $grouped | Select-Object Count, Name,
 @{Name = "TotalSize"; Expression = { $_.group | Measure-Object -Property length -Sum | Select-Object -ExpandProperty Sum } }
-$measured | Sort-Object TotalSize -Descending | Select-Object -First 10
+
+$measured |
+Sort-Object TotalSize -Descending |
+Select-Object -First 10
 #you could turn this into a PowerShell script or function
 
 #there's no end
-$measured | Sort-Object TotalSize -Descending | Select-Object -First 10 | ConvertTo-Json | Out-File .\extensions.json
+$measured |
+Sort-Object TotalSize -Descending |
+Select-Object -First 10 |
+ConvertTo-Json |
+Out-File .\extensions.json
+
 Get-Content .\extensions.json | ConvertFrom-Json | ConvertTo-Html
 
 #endregion

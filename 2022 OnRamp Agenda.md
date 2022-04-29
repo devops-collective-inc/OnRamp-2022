@@ -80,14 +80,14 @@ Your agenda will consist of live presentations, pre-recorded content, open discu
 | 9:45-10:30  | __PowerShell: Modules and PowerShellGet__ (*Jeff Hicks*) |
 | 10:30-10:45 | *Break* |
 | 10:45-11:30 | __PowerShell: Remote Management__ (*Jeff Hicks*) |
-| 11:30-12:00 | __Desktops, Servers, and Networks: An Introduction to IT Infrastructure__ (*Phil Bossman*) |
+| 11:30-12:00 | __PowerShell continued |
 | 12:00-1:00  | *Lunch* |
 | 1:00-1:45   | __Introduction to Containers__ (*Anthony Nocentino*) |
 | 1:45-2:15   | __Getting Started with VS Code__ (*Jeff Hicks*) |
 | 2:15-2:45 | *Break* |
 | 2:45-3:15   | __Introduction to PowerShell Scripting__ (*Jeff Hicks*) |
 | 3:15-4:00   | __Creating a Simple PowerShell Function__ (*Jeff Hicks*) |
-| 4:00-5:00   | __*Career Panel__[^1]*  |
+| 4:15-5:00   | __*Career Panel__[^1]*  |
 
 ## Thursday 28 April
 
@@ -98,10 +98,11 @@ Your agenda will consist of live presentations, pre-recorded content, open discu
 | 9:45-10:00  | __Review and Questions__ |
 | 10:00-10:45 | __Introduction to Source Control, Git, and Github__ (*Jeff Hicks*) |
 | 10:45-11:00 | *Break* |
-| 11:00-11:45 | __Open Panel Discussion__ |
-| 11:45-12:00 | __OnRamp Closing Remarks and Your Next Steps__ (*Jeff Hicks*) |
+| 11:00-12:00 | __PowerShell Modules__ |
 | 12:00-12:40 | *Lunch* |
-| 1:00-3:00   | __Iron Scripter and Closing Events__[^1] |
+| 12:45-1:30  | __Open Time__ |
+| 1:30-1:45 | __OnRamp Closing Remarks and Your Next Steps__ (*Jeff Hicks*) |
+| 1:45-3:00   | __Iron Scripter and Closing Events__[^1] |
 
 This schedule is subject to change.
 

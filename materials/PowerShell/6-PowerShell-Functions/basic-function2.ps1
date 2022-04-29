@@ -84,4 +84,4 @@ Function Get-HotFixReport {
     Sort-Object -Property Installed
 
     Write-Verbose "Finishing Get-HotFixReport"
-}
+} #close function

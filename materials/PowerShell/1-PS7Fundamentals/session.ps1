@@ -159,7 +159,7 @@ help about_registry_provider
 
 Get-Process | Where-Object {$_.workingset -gt 100MB} | Sort-Object -property WorkingSet -Descending
 
-Get-Service Bits | Stop-Service
+Get-Service Bits | Stop-Service -PassThru
 help Stop-Service
 #inputobject and Name parameters
 
@@ -185,7 +185,7 @@ Get-Service | Where-Object {$_.status -eq 'running'} |
 Select-Object Name,StartType,Description |
 Format-Table -wrap | Out-File $env:temp\services.txt
 
-notepad $env:temp\services.txt
+psedit $env:temp\services.txt
 
 #endregion
 

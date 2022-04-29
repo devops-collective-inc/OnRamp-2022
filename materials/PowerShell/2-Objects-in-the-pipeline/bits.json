@@ -1,0 +1,10 @@
+{
+  "Name": "bits",
+  "DisplayName": "Background Intelligent Transfer Service",
+  "CanPauseAndContinue": false,
+  "CanShutdown": false,
+  "CanStop": false,
+  "StartType": 3,
+  "Status": 1,
+  "ServiceType": 32
+}
