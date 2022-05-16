@@ -1,3 +1,5 @@
 # Video Note
 
-Due to its size, the video file is stored in GitHub LFS. If you download or clone this repository, it will __not__ be included. You will need manually download the file from the repository to your desktop or run the Download-Presentation.ps1 script which will download the file to your TEMP directory.
+Due to its size, the video file is stored outside of Github. If you download or clone this repository, it will __not__ be included. Use this link to view the video online:
+
+https://powershellorg.sharepoint.com/:v:/g/EZBOuJLD5D9AkaNQk__75N4Bc1v2h-vnVW4dI-oIwaiQuQ
